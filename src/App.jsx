@@ -12,6 +12,7 @@ function App() {
   return (
 
     < div >
+
       {
         allCosts.map(item => {
           // return <Cost key={item.id} type={item.type} price={item.price} />

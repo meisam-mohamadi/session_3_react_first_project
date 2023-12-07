@@ -1,13 +1,20 @@
-// const Cost = (props) => {
-const Cost = ({ data }) => {
-    // const a = { data : "aaa" , blah:"abcd" }
-    // const {data} = a
+import { useState } from "react";
 
-    console.log(props)
+
+
+
+const Cost = ({ data }) => {
+    // alert("render shodam")
+    const [myPrice, setMyPrice] = useState(data.price)
+    const clickHandler = () => {
+        setMyPrice(myPrice + 1)
+    }
+
     return (
         <div>
             <h1>{data.type}</h1>
-            <h1>{data.price}</h1>
+            <h1>{myPrice}</h1>
+            <button onClick={clickHandler}>change price</button>
         </div>
     )
 }
