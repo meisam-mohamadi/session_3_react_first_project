@@ -1,5 +1,3 @@
-import React from 'react'
-
 // const Cost = (props) => {
 const Cost = ({ data }) => {
     // const a = { data : "aaa" , blah:"abcd" }
