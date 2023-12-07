@@ -1,6 +1,8 @@
 
 import './App.css'
 import Cost from './components/Cost'
+import Counter from './components/Counter'
+import MyForm from './components/MyForm'
 
 function App() {
   const allCosts = [
@@ -12,6 +14,9 @@ function App() {
   return (
 
     < div >
+      {/* <Counter /> */}
+
+      <MyForm />
 
       {
         allCosts.map(item => {
